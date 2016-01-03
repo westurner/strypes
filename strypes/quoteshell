@@ -1,0 +1,55 @@
+def shellquotes(str_):
+    """shell escape a string
+
+    Args:
+        str_ (basestring): string to 'qu\'ote and "escape"'
+    Returns:
+        unicode: single-quoted ``'str\'ing'``
+    """
+    if IS_PYTHON2:
+        if sys.version_info[:2] < (2, 6):
+            # TODO fix
+            if str_ == "":
+                return "''"
+    elif sys.version_info[:2] >= (3, 4):
+        return shlex.quote(str_)
+    return pipes.quote(str_)
+
+
+# shellquotes == shellquotesingle
+shellquotes = None
+# shellquoted == shellquotedouble
+#shellquoted = None
+
+import pipes
+import shlex
+if IS_PYTHON2:
+    if sys.version_info[:2] < (2, 6):
+        # TODO fix
+        def shellquotes(_str):
+            if str_ == "":
+                return "''"
+            return pipes.quote(str_)
+elif sys.version_info[:2] >= (3, 4):
+    shellquotes = shlex.quote
+
+if shellquotes is None:
+    shellquotes = pipes.quote
+
+try:
+    import sarge
+    shellquotes = sarge.shell_quote
+except ImportError:
+    pass
+
+def shellquote_single_always(str_):
+    return str_.__class__.join(
+        str_.__class__(),
+        ("'", str_.replace("'", "\'"), "'"))
+
+"""
+quote_shell_single
+quote_xml_single
+quote_html_single
+quote_turtle_single
+"""
