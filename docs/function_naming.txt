@@ -77,3 +77,8 @@ stresc_shell_dbl_always
 
 stresc_shell_single_always
 stresc_shell_double_always
+
+
+stresc_xml_attr
+stresc_xml_value
+stresc_xml_value_cdata
