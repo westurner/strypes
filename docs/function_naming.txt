@@ -70,4 +70,10 @@ strypesc_shell_single_always
 
 stresc_shell_single_always
 
+stresc_shell_sngl_always
+stresc_shell_dbl_always
 
+
+
+stresc_shell_single_always
+stresc_shell_double_always
