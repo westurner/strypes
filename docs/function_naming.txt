@@ -54,3 +54,20 @@ sqsonlyif
 
 s_sqsalways
 s_sqsonlyif
+
+
+
+strypes_quote_shell_single_always
+strypes_quote_shell_single_onlyif
+
+sqssalways
+sqssonlyif
+
+s_qssalways
+s_qssonlyif
+
+strypesc_shell_single_always
+
+stresc_shell_single_always
+
+
