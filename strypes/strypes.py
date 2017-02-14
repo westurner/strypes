@@ -17,6 +17,34 @@ import urllib
 import warnings
 
 
+def shell_quote(var):
+    """
+    Escape single quotes and add double quotes around a given variable.
+    Args:
+        _str (str): string to add quotes to
+    Returns:
+        str: string wrapped in quotes
+    .. warning:: This is not safe for untrusted input and only valid
+       in this context (``os.environ``).
+    """
+    _repr = repr(var)
+    if _repr.startswith('\''):
+        return "\"%s\"" % _repr[1:-1]
+
+
+def shell_varquote(str_):
+    """
+    Add doublequotes and shell variable brackets to a string
+    Args:
+        str_ (str): string to varquote (e.g. ``VIRTUAL_ENV``)
+    Returns:
+        str: "${VIRTUAL_ENV}"
+    """
+    return shell_quote('${%s}' % str_)
+
+
+####
+
 def shell_escape(shellstr):
     warnings.warn('shell_escape NotImplemented')
     return shellstr
