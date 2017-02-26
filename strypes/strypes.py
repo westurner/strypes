@@ -4,6 +4,9 @@ from __future__ import print_function
 """
 strypes
 
+References:
+
+- https://wiki.python.org/moin/EscapingHtml
 
 TODO:
 
