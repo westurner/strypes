@@ -46,5 +46,15 @@ Features
     - [ ] Jupyter Notebook: __str__, __repr__, _repr_html_, _repr_json_,
     - [ ] MarkupSafe: Markup(), __html__, __html_format__, __str__, __repr__
     
-      - https://github.com/pallets/markupsafe
+      - Src: https://github.com/pallets/markupsafe
+      
+    - [ ] PyContracts
+    
+      - Src: https://github.com/AndreaCensi/contracts
+      - Docs: https://andreacensi.github.io/contracts/
+    
+    - [ ] Python 3 Type Annotations (MyPy)
+    
+      - Src: https://github.com/python/typeshed
+      - https://github.com/python/typeshed/blob/master/stdlib/3/types.pyi
 
