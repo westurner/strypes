@@ -20,7 +20,7 @@ Features
 --------
 
 * [ ] TODO
-* [ ] https://github.com/westurner/strypes/blob/master/strypes/strypes.py
+* [ ] https://github.com/westurner/strypes/blob/develop/strypes/strypes.py
 
   - strypes.TypedString()
   
