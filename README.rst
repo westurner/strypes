@@ -12,7 +12,9 @@ strypes
 strypes is a Python library for working with various types of strings
 
 * Free software: BSD license
-* Documentation: https://strypes.readthedocs.org.
+* Src: https://github.com/westurner/strypes
+
+.. * Documentation: https://strypes.readthedocs.org.
 
 Features
 --------
@@ -42,7 +44,7 @@ Features
   - Interfaces:
   
     - [ ] Jupyter Notebook: __str__, __repr__, _repr_html_, _repr_json_,
-    - [ ] MarkupSafe: Markup(), __html__, __hmtml_format__, __str__, __repr__
+    - [ ] MarkupSafe: Markup(), __html__, __html_format__, __str__, __repr__
     
       - https://github.com/pallets/markupsafe
 
