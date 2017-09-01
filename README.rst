@@ -17,4 +17,32 @@ strypes is a Python library for working with various types of strings
 Features
 --------
 
-* TODO
+* [ ] TODO
+* [ ] https://github.com/westurner/strypes/blob/master/strypes/strypes.py
+
+  - strypes.TypedString()
+  
+    - [ ] HTML
+    
+      - [ ] HTMLAttribute
+      - [ ] HTMLText
+     
+    - [ ] SQL
+    - [ ] Shell
+
+      - [ ] ShellSingleQuoted
+      - [ ] ShellDoubleQuoted
+
+    - [ ] Path
+    - [ ] URI
+    - [ ] URN
+    - [ ] URL
+    - [ ] JSON
+    
+  - Interfaces:
+  
+    - [ ] Jupyter Notebook: __str__, __repr__, _repr_html_, _repr_json_,
+    - [ ] MarkupSafe: Markup(), __html__, __hmtml_format__, __str__, __repr__
+    
+      - https://github.com/pallets/markupsafe
+
